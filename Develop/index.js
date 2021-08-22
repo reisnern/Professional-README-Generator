@@ -17,7 +17,13 @@ const questions = [
         type: "input",
         name: "description",
         message: "Description for the project: " 
-      }
+      },
+      {
+        type: "list",
+        name: "license",
+        message: "License: ",
+        choices: ["MIT", "None"]
+      },
 ];
 
 // TODO: Create a function to write README file
