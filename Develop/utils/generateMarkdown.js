@@ -16,21 +16,26 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) {
   if (license!== "None") {
     return {
-      
-    }
-  }
-}
-
+      'https://opensource.org/licenses/'
+  :
 
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
 
 }
 
-function generateMarkdown(data) {
-  return `# ${data.title}
+,function generateMarkdown(data) {
+  return `
+  # ${data.title}
   ${license[data.license] || ""}
+
+  ## Description
+  ${data.description}
+
+  ## Start
+  *[Install](#install)
+  
 `;
 }
-
+    }}  }
 module.exports = generateMarkdown;
