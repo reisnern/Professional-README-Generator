@@ -14,7 +14,7 @@ function renderLicenseBadge(license) {
 
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  if (license!== "None") {
+  if (license !== "None") {
     return {
       'https://opensource.org/licenses/'
   :
@@ -23,8 +23,8 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
 
 }
-
-,function generateMarkdown(data) {
+//Generate Markdown Function
+function: generateMarkdown:(data) {
   return `
   # ${data.title}
   ${license[data.license] || ""}
@@ -34,7 +34,7 @@ function renderLicenseSection(license) {
 
   ## Start
   *[Install](#install)
-  
+
 `;
 }
     }}  }
