@@ -24,6 +24,11 @@ const questions = [
         message: "License: ",
         choices: ["MIT", "None"]
       },
+      {
+        type: "input",
+        name: "GitHub username",
+        message: "Enter your username for GitHub: "
+      },
 ];
 
 // TODO: Create a function to write README file
